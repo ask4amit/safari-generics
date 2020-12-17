@@ -22,5 +22,14 @@ public class ClothingPair<E extends /*Object &*/ Sized & Colored> extends Pair<E
   public static <F extends Sized & Colored> boolean match(F left, F right) {
     return left.getSize() == right.getSize() &&
         left.getColor().equals(right.getColor());
+
+  }
+
+  public static void show() {
+    //  Colored & Sized cs;
+//    var cs = ???? Can potentially create <Colored & Sized>
+    var thing =
+        (Math.random() > 0) ? "Hello" : 1;
+
   }
 }
